@@ -25,6 +25,7 @@ class Person:
     def getName(self):
         return self.name
 
+### 类的继承
 class Worker(Person):
 
     def work(self):
