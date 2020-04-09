@@ -28,6 +28,8 @@ for row in rowsList:  # 取出查询到的数值，并赋值给参数
     # 5. 关闭文件
     f.close()
 
+### 关闭数据连接
+conn.close()
 '''
     写入excel文件中，有大小限制，每个只能写7万多
     for row in rowsList:  # 取出查询到的数值，并赋值给参数
