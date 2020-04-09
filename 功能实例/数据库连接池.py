@@ -41,9 +41,10 @@ def func():
 
     cursor = conn.cursor()
     cursor.execute('select * from ts_user_info')
-    result = cursor.fetchall()
+    result = cursor.fetchone()
     print("---------111111111111--------------")
-    print(result)
+    print(type(result))
+    print(result[0])
     conn.close()
 
 
@@ -56,7 +57,8 @@ def func():
     cursor.execute('select * from ts_user_info')
     result = cursor.fetchall()
     print("---------2222222222--------------")
-    print(result)
+    print(type(result))
+    print(result[1][0])
     conn.close()
 
 func()
