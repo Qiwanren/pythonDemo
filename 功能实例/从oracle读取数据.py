@@ -3,7 +3,7 @@ import xlwt
 import csv
 
 ### 连接oracle数据库
-conn = cx_Oracle.connect('qwr/admin@192.168.31.245/orcl')
+conn = cx_Oracle.connect('qwr/admin@127.0.0.1/orcl')
 cur = conn.cursor()
 cur.execute("select t.rec_date from skww_vibeac_days t ")  # 查询数据内容
 rows = cur.fetchall()  # 由于每条数据格式一样，只取一条内容格式来赋值
